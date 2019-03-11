@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
         return 0;
     }
 
-    qr = QRcode_encodeString(argv[0], 0, QR_ECLEVEL_L, QR_MODE_8, 1);
+    qr = QRcode_encodeString(argv[1], 0, QR_ECLEVEL_L, QR_MODE_8, 1);
     printf("version: %d\n", qr->version);
     printf("width  : %d\n", qr->width  );
     printf("\n");
