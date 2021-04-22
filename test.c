@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
     int x, y;
 
     if (argc < 2) {
-        printf("usage: qrencode [STRING]");
+        printf("usage: qrencode [STRING]\n");
         return 0;
     }
 
@@ -28,5 +28,6 @@ int main(int argc, char *argv[])
     }
 
     if (qr) QRcode_free(qr);
+    return 0;
 }
 
